@@ -38,17 +38,17 @@ export default function App() {
     {
       title: "Prohibited Land Checker",
       description: "Verify government and restricted land records.",
-      href: "#platform-prohibited"
+      href: "https://srinirao082.github.io/Final_prohibited-/"
     },
     {
       title: "Lakes & Nalas Risk Check",
       description: "Detect proximity and encroachment risks near water bodies.",
-      href: "#platform-lakes"
+      href: "https://srinirao082.github.io/lakes-nalas/"
     },
     {
       title: "EC Upload & Risk Analysis",
       description: "Upload encumbrance certificates and receive automated legal insights.",
-      href: "#platform-ec"
+      href: "https://srinirao082.github.io/Designsaaslandingpage/"
     }
   ];
 
@@ -436,30 +436,36 @@ export default function App() {
             </motion.div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-[1400px] mx-auto">
-              <BentoCard
-                icon={<AlertTriangle className="w-7 h-7" />}
-                title="Prohibited Land Verification"
-                description="Identify restricted and government lands using official records and spatial data. Powered by AI-driven cross-referencing and satellite analysis."
-                gradient="from-blue-500 to-cyan-500"
-                className="lg:col-span-2"
-                delay={0}
-              />
-              <BentoCard
-                icon={<Droplet className="w-7 h-7" />}
-                title="Lakes & Nalas Risk Detection"
-                description="Analyze land proximity to lakes and drainage channels to identify encroachment risks using machine learning."
-                gradient="from-purple-500 to-pink-500"
-                className=""
-                delay={0.1}
-              />
-              <BentoCard
-                icon={<FileSearch className="w-7 h-7" />}
-                title="Encumbrance Certificate Analysis"
-                description="Automatically process EC documents with smart OCR and highlight legal risks through intelligent document analysis."
-                gradient="from-orange-500 to-red-500"
-                className=""
-                delay={0.2}
-              />
+              <a href="https://srinirao082.github.io/Final_prohibited-/" className="lg:col-span-2 block">
+                <BentoCard
+                  icon={<AlertTriangle className="w-7 h-7" />}
+                  title="Prohibited Land Verification"
+                  description="Identify restricted and government lands using official records and spatial data. Powered by AI-driven cross-referencing and satellite analysis."
+                  gradient="from-blue-500 to-cyan-500"
+                  className=""
+                  delay={0}
+                />
+              </a>
+              <a href="https://srinirao082.github.io/lakes-nalas/" className="block">
+                <BentoCard
+                  icon={<Droplet className="w-7 h-7" />}
+                  title="Lakes & Nalas Risk Detection"
+                  description="Analyze land proximity to lakes and drainage channels to identify encroachment risks using machine learning."
+                  gradient="from-purple-500 to-pink-500"
+                  className=""
+                  delay={0.1}
+                />
+              </a>
+              <a href="https://srinirao082.github.io/Designsaaslandingpage/" className="block">
+                <BentoCard
+                  icon={<FileSearch className="w-7 h-7" />}
+                  title="Encumbrance Certificate Analysis"
+                  description="Automatically process EC documents with smart OCR and highlight legal risks through intelligent document analysis."
+                  gradient="from-orange-500 to-red-500"
+                  className=""
+                  delay={0.2}
+                />
+              </a>
               <BentoCard
                 icon={<Eye className="w-7 h-7" />}
                 title="Continuous Land Status Monitoring"
@@ -687,6 +693,7 @@ export default function App() {
                   className="text-gray-900 mb-3"
                   style={{ fontSize: '22px', fontWeight: 600, letterSpacing: '-0.015em' }}
                 >
+
                   Banks & NBFCs
                 </h3>
                 <p className="text-gray-700 mb-6" style={{ fontSize: '15px', lineHeight: '1.6' }}>
