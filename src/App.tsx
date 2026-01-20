@@ -694,7 +694,7 @@ export default function App() {
                   style={{ fontSize: '22px', fontWeight: 600, letterSpacing: '-0.015em' }}
                 >
                   Banks & NBFCs
-                  </h3>
+                </h3>
                 <p className="text-gray-700 mb-6" style={{ fontSize: '15px', lineHeight: '1.6' }}>
                   Minimize lending risks with automated land verification. Accelerate loan approvals with instant legal checks. Reduce NPA exposure from disputed properties.
                 </p>
@@ -810,4 +810,4 @@ export default function App() {
       </main>
     </div>
   );
-} 
+}
