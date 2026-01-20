@@ -694,3 +694,120 @@ export default function App() {
                   style={{ fontSize: '22px', fontWeight: 600, letterSpacing: '-0.015em' }}
                 >
                   Banks & NBFCs
+                  </h3>
+                <p className="text-gray-700 mb-6" style={{ fontSize: '15px', lineHeight: '1.6' }}>
+                  Minimize lending risks with automated land verification. Accelerate loan approvals with instant legal checks. Reduce NPA exposure from disputed properties.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <Check className="w-4 h-4 text-purple-600 mt-1 flex-shrink-0" />
+                    <span className="text-gray-600 text-[14px]">Pre-approval land risk assessment</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-4 h-4 text-purple-600 mt-1 flex-shrink-0" />
+                    <span className="text-gray-600 text-[14px]">Automated EC validation for loans</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-4 h-4 text-purple-600 mt-1 flex-shrink-0" />
+                    <span className="text-gray-600 text-[14px]">Regulatory compliance tracking</span>
+                  </li>
+                </ul>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-8 border border-green-200/50 shadow-lg hover:shadow-xl transition-all"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-600 to-emerald-600 flex items-center justify-center mb-6 shadow-lg">
+                  <Scale className="w-7 h-7 text-white" />
+                </div>
+                <h3 
+                  className="text-gray-900 mb-3"
+                  style={{ fontSize: '22px', fontWeight: 600, letterSpacing: '-0.015em' }}
+                >
+                  Brokers, Agents & Lawyers
+                </h3>
+                <p className="text-gray-700 mb-6" style={{ fontSize: '15px', lineHeight: '1.6' }}>
+                  Build trust with clients through instant, reliable verification. Differentiate your services with data-backed insights. Close deals faster with confidence.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <Check className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                    <span className="text-gray-600 text-[14px]">White-label reports for clients</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                    <span className="text-gray-600 text-[14px]">Instant property risk summaries</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                    <span className="text-gray-600 text-[14px]">Decision confidence for stakeholders</span>
+                  </li>
+                </ul>
+              </motion.div>
+            </div>
+          </div>
+
+          {/* CTA Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 rounded-[40px] opacity-90" />
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIwLjUiIG9wYWNpdHk9IjAuMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] rounded-[40px]" />
+
+            <div className="relative px-8 lg:px-16 py-16 lg:py-20 text-center rounded-[40px]">
+              <h2
+                className="text-white mb-4"
+                style={{
+                  fontSize: "44px",
+                  fontWeight: 700,
+                  letterSpacing: "-0.025em",
+                }}
+              >
+                Ready to get started?
+              </h2>
+              <p
+                className="text-white/90 mb-10 max-w-2xl mx-auto"
+                style={{ fontSize: "19px" }}
+              >
+                Join thousands of organizations using HYDRAA to
+                verify land with confidence
+              </p>
+
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <motion.button
+                  whileHover={{
+                    scale: 1.02,
+                    boxShadow:
+                      "0 25px 50px -12px rgba(0, 0, 0, 0.3)",
+                  }}
+                  whileTap={{ scale: 0.98 }}
+                  className="px-8 py-4 bg-white text-gray-900 rounded-full shadow-2xl text-[16px] flex items-center gap-2.5"
+                  style={{ fontWeight: 600 }}
+                >
+                  Start Free Trial
+                  <ChevronRight className="w-4 h-4" />
+                </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white rounded-full border border-white/20 text-[16px] hover:bg-white/20 transition-all"
+                  style={{ fontWeight: 600 }}
+                >
+                  Talk to Sales
+                </motion.button>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </main>
+    </div>
+  );
+} 
